@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Book Your Ticket</title>
+    <link rel="stylesheet" href="booking.css">
+    
+    <style>
+      
+    </style>
+  </head>
+  <body>
+
+     
+    <div class="movie-container">
+      <label style="font-size: 1em;">Pick a Range:</label>
+      <select id="movie">
+        <option value="180">Elite (Rs. 180)</option>
+        <option value="120">Classic (Rs. 120)</option>
+        <option value="60">Economy (Rs. 60)</option>
+      </select>
+    </div>
+
+    <ul class="showcase">
+      <li>
+        <div id="seat" class="seat"></div>
+        <small class="status" style="font-size: 1em;">Available</small>
+      </li>
+      <li>
+        <div id="seat" class="seat selected"></div>
+        <small class="status" style="font-size: 1em;">Selected</small>
+      </li>
+      <li>
+        <div id="seat" class="seat occupied"></div>
+        <small class="status" style="font-size: 1em;">Occupied</small>
+      </li>
+    </ul>
+
+    <div class="container">
+      <div class="screen"></div>
+
+      <div class="row">
+        <div id="seat" class="seat">A1</div>
+        <div id="seat" class="seat">A2</div>
+        <div id="seat" class="seat">A3</div>
+        <div id="seat" class="seat">A4</div>
+        <div id="seat" class="seat">A5</div>
+        <div id="seat" class="seat">A6</div>
+        <div id="seat" class="seat">A7</div>
+        <div id="seat" class="seat">A8</div>
+        <div id="seat" class="seat">A9</div>
+        <div id="seat" class="seat">A10</div>
+        <div id="seat" class="seat">A11</div>
+        <div id="seat" class="seat">A12</div>
+        <div id="seat" class="seat">A13</div>
+        <div id="seat" class="seat">A14</div>
+        <div id="seat" class="seat">A15</div>
+        <div id="seat" class="seat">A16</div>
+        <div id="seat" class="seat">A17</div>
+        <div id="seat" class="seat">A18B</div>
+
+      </div>
+      <div class="row">
+        <div id="seat" class="seat">B1</div>
+        <div id="seat" class="seat">B2</div>
+        <div id="seat" class="seat">B3</div>
+        <div id="seat" class="seat occupied">B4</div>
+        <div id="seat" class="seat occupied">B5</div>
+        <div id="seat" class="seat">B6</div>
+        <div id="seat" class="seat">B7</div>
+        <div id="seat" class="seat">B8</div>
+        <div id="seat" class="seat">B9</div>
+        <div id="seat" class="seat">B10</div>
+        <div id="seat" class="seat">B11</div>
+        <div id="seat" class="seat">B12</div>
+        <div id="seat" class="seat">B13</div>
+        <div id="seat" class="seat">B14</div>
+        <div id="seat" class="seat">B15</div>
+        <div id="seat" class="seat occupied">B16</div>
+        <div id="seat" class="seat occupied">B17</div>
+        <div id="seat" class="seat occupied">B18</div>
+      </div>
+      <div class="row">
+        <div id="seat" class="seat">C1</div>
+        <div id="seat" class="seat">C2</div>
+        <div id="seat" class="seat">C3</div>
+        <div id="seat" class="seat">C4</div>
+        <div id="seat" class="seat">C5</div>
+        <div id="seat" class="seat">C6</div>
+        <div id="seat" class="seat occupied">C7</div>
+        <div id="seat" class="seat occupied">C8</div>
+        <div id="seat" class="seat">C9</div>
+        <div id="seat" class="seat">C10</div>
+        <div id="seat" class="seat">C11</div>
+        <div id="seat" class="seat">C12</div>
+        <div id="seat" class="seat">C13</div>
+        <div id="seat" class="seat">C14</div>
+        <div id="seat" class="seat">C15</div>
+        <div id="seat" class="seat">C16</div>
+        <div id="seat" class="seat">C17</div>
+        <div id="seat" class="seat">C18</div>
+      </div>
+      <div class="row">
+        <div id="seat" class="seat occupied">D1</div>
+        <div id="seat" class="seat">D2</div>
+        <div id="seat" class="seat">D3</div>
+        <div id="seat" class="seat">D4</div>
+        <div id="seat" class="seat occupied">D5</div>
+        <div id="seat" class="seat">D6</div>
+        <div id="seat" class="seat">D7</div>
+        <div id="seat" class="seat occupied">D8</div>
+        <div id="seat" class="seat occupied">D9</div>
+        <div id="seat" class="seat">D10</div>
+        <div id="seat" class="seat">D11</div>
+        <div id="seat" class="seat occupied">D12</div>
+        <div id="seat" class="seat">D13</div>
+        <div id="seat" class="seat">D14</div>
+        <div id="seat" class="seat">D15</div>
+        <div id="seat" class="seat">D16</div>
+        <div id="seat" class="seat">D17</div>
+        <div id="seat" class="seat occupied">D18</div>
+      </div>
+      <div class="row">
+        <div id="seat" class="seat">E1</div>
+        <div id="seat" class="seat">E2</div>
+        <div id="seat" class="seat">E3</div>
+        <div id="seat" class="seat occupied">E4</div>
+        <div id="seat" class="seat occupied">E5</div>
+        <div id="seat" class="seat">E6</div>
+        <div id="seat" class="seat occupied">E7</div>
+        <div id="seat" class="seat">E8</div>
+        <div id="seat" class="seat">E9</div>
+        <div id="seat" class="seat">E10</div>
+        <div id="seat" class="seat">E11</div>
+        <div id="seat" class="seat">E12</div>
+        <div id="seat" class="seat">E13</div>
+        <div id="seat" class="seat">E14</div>
+        <div id="seat" class="seat">E15</div>
+        <div id="seat" class="seat">E16</div>
+        <div id="seat" class="seat occupied">E17</div>
+        <div id="seat" class="seat occupied">E18</div>
+
+      </div>
+      <div class="row">
+        <div id="seat" class="seat occupied">F1</div>
+        <div id="seat" class="seat occupied">F2</div>
+        <div id="seat" class="seat">F3</div>
+        <div id="seat" class="seat">F4</div>
+        <div id="seat" class="seat">F5</div>
+        <div id="seat" class="seat">F6</div>
+        <div id="seat" class="seat occupied">F7</div>
+        <div id="seat" class="seat occupied">F8</div>
+        <div id="seat" class="seat">F9</div>
+        <div id="seat" class="seat">F10</div>
+        <div id="seat" class="seat occupied">F11</div>
+        <div id="seat" class="seat occupied">F12</div>
+        <div id="seat" class="seat occupied">F13</div>
+        <div id="seat" class="seat occupied">F14</div>
+        <div id="seat" class="seat occupied">F15</div>
+        <div id="seat" class="seat occupied">F16</div>
+        <div id="seat" class="seat">F17</div>
+        <div id="seat" class="seat occupied">F18</div>
+
+      </div>
+      
+      
+    </div>
+
+    <p class="text" style="font-size: 1em;margin:0px 0px 15px 0px" style="color: white;">
+      You have selected <span id="count">0</span> seats for a price of Rs.<span
+        id="total"
+        >0</span>
+    </p>
+
+    <a href="./index.html">
+      <button class="btn-home" onclick="payAlert()">
+        Proceed to Pay
+      </button>
+    </a>
+    
+
+    <script>
+     
+      function payAlert(){
+        alert("Payment Successful! \nThank you for booking.");
+      }
+      var count=0;
+      var seats=document.getElementsByClassName("seat");
+      for(var i=0;i<seats.length;i++){
+        var item=seats[i];
+        
+        item.addEventListener("click",(event)=>{
+          var price= document.getElementById("movie").value;
+
+          if (!event.target.classList.contains('occupied') && !event.target.classList.contains('selected') ){
+          count++;
+          
+          var total=count*price;
+          event.target.classList.add("selected");
+          document.getElementById("count").innerText=count;
+          document.getElementById("total").innerText=total;
+
+          }
+        })
+      }
+    </script>
+  </body>
+</html>

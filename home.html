@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>DevRev</title>
+    
+</head>
+
+<body>
+    <script>
+        function myFunction()
+        {
+            window.location = 'booking.html';
+            document.write('Please wait...<br>Redirecting to Ticket Booking Page');
+            setTimeout('myFunction()',3000);; //will load after 3 seconds
+        }
+    </script>
+
+<section class="top-bar">
+
+
+    <div class="left-content">
+        <h2 class="title">DevRev</h2>
+        <ul class="navigation">
+            <li><a href="#">Home</a></li>
+            <li><a class="active" href="#">Movies</a></li>
+            <li><a href="#">Theaters</a></li>
+            <li><a href="#">News</a></li>
+        </ul>
+    </div>
+
+
+
+    <div class="right-content">
+        <img src="filter.png" alt="" class="filter">
+        <img src="cart.png" alt="" class="cart">
+        <img src="help.png" alt="" class="help">
+        <div class="profile-img-box">
+            <img src="pro pic.jpg" alt="">
+        </div>
+        <img src="menu.png" alt="" class="menu">
+    </div>
+
+
+
+</section>
+<section class="main-container">
+    <div class="sidebar">
+        <form action="#">
+
+
+            <div class="sidebar-groups">
+                <h3 class="sg-title">Categories</h3>
+                <input type="checkbox" id="adventure" name="adventure" value="adventure">
+                <label for="adventure">Adventure</label><br>
+                <input type="checkbox" id="action" name="action" value="action">
+                <label for="action">Action</label><br>
+                <input type="checkbox" id="animation" name="animation" value="animation">
+                <label for="animation">Animation</label><br>
+                <input type="checkbox" id="comedy" name="comedy" value="comedy">
+                <label for="comedy">Comedy</label><br>
+                <input type="checkbox" id="science" name="science" value="science">
+                <label for="science">Science Fiction</label><br>
+                <input type="checkbox" id="thriller" name="thriller" value="thriller">
+                <label for="thriller">Thriller</label><br>
+                <input type="checkbox" id="history" name="history" value="history">
+                <label for="history">History</label><br>
+                <input type="checkbox" id="documentary" name="documentary" value="documentary">
+                <label for="documentary">Documentary</label><br>
+                <input type="checkbox" id="fantasy" name="fantasy" value="fantasy">
+                <label for="fantasy">Fantasy</label><br>
+            </div>
+
+
+
+            <div class="sidebar-groups">
+                <h3 class="sg-title">Language</h3>
+                <input type="checkbox" id="english" name="english" value="english">
+                <label for="english">English</label><br>
+                <input type="checkbox" id="spanish" name="spanish" value="spanish">
+                <label for="spanish">Spanish</label><br>
+                <input type="checkbox" id="hindi" name="hindi" value="hindi">
+                <label for="hindi">Hindi</label><br>
+            </div>
+
+
+
+            <div class="sidebar-groups">
+                <h3 class="sg-title">Time</h3>
+                <input type="radio" id="morning" name="time" value="morning">
+                <label for="morning">Morning</label><br>
+                <input type="radio" id="night" name="time" value="night">
+                <label for="night">Night</label><br>
+            </div>
+
+
+
+            <div class="sidebar-groups">
+                <a href="#" class="btn-l btn">Apply Filters</a>
+            </div>
+
+        </form>
+    </div>
+
+
+
+    <div class="movies-container">
+
+        <!-- This is main container -->
+        <div class="upcoming-img-box">
+            <img src="john.jpeg" alt="">
+            <p class="upcoming-title">Upcoming Movies</p>
+            <div class="buttons">
+                <a href="#" class="btn" onclick="myFunction()">Book Now</a>
+                <a href="https://www.youtube.com/watch?v=XGk2EfbD_Ps" class="btn-alt btn">Play Trailer</a>
+            </div>
+        </div>
+        <div class="current-movies">
+
+
+            <div class="current-movie">
+                <div class="cm-img-box">
+                    <img src="sardar.avif" alt="" data-filter="adventure">
+                </div>
+                <h3 class="movie-title">Sardar</h3>
+                <!-- <p class="screen-name">Screen : Platinum</p> -->
+                <label>
+                    Screen : 
+                </label>
+                <select id="movie" name="color" onchange="changeColor()">
+                    <option value="blue">Platinum</option>
+                    <option value="green">Gold</option>
+                    <option value="red">Silver</option>
+                </select>
+                <div class="booking">
+                    <h2 class="price">&#8377 250</h2>
+                    <a href="#" class="btn" onclick="myFunction()">Buy Tickets</a>
+                </div>
+            </div>
+
+
+            <div class="current-movie">
+                <div class="cm-img-box">
+                    <img src="movie2.jpg" alt="">
+                </div>
+                <h3 class="movie-title">Vikram</h3>
+                <!-- <p class="screen-name">Screen : Gold</p> -->
+                <label>
+                    Screen : 
+                </label>
+                <select id="movie">
+                    <option value="10">Platinum</option>
+                    <option value="25">Gold</option>
+                    <option value="16">Silver</option>
+                </select>
+                <div class="booking">
+                    <h2 class="price">&#8377 200</h2>
+                    <a href="#" class="btn" onclick="myFunction()">Buy Tickets</a>
+                </div>
+            </div>
+
+
+            <div class="current-movie">
+                <div class="cm-img-box">
+                    <img src="warcraft.jpg" alt="">
+                </div>
+                <h3 class="movie-title">Warcraft</h3>
+                <!-- <p class="screen-name">Screen : Silver</p> -->
+                <label>
+                    Screen : 
+                </label>
+                <select id="movie">
+                    <option value="10">Platinum</option>
+                    <option value="25">Gold</option>
+                    <option value="16">Silver</option>
+                </select>
+                <div class="booking">
+                    <h2 class="price">&#8377 350</h2>
+                    <a href="#" class="btn" onclick="myFunction()">Buy Tickets</a>
+                </div>
+            </div>
+
+
+            <div class="current-movie">
+                <div class="cm-img-box">
+                    <img src="brahmastram.avif" alt="">
+                </div>
+                <h3 class="movie-title">Brahmastra</h3>
+                <!-- <p class="screen-name">Screen : Silver</p> -->
+                <label>
+                    Screen : 
+                </label>
+                <select id="movie">
+                    <option value="10">Platinum</option>
+                    <option value="25">Gold</option>
+                    <option value="16">Silver</option>
+                </select>
+                <div class="booking">
+                    <h2 class="price">&#8377 200</h2>
+                    <a href="#" class="btn" onclick="myFunction()">Buy Tickets</a>
+                </div>
+            </div>
+
+
+            <div class="current-movie">
+                <div class="cm-img-box">
+                    <img src="Maaveeran.jpg" alt="">
+                </div>
+                <h3 class="movie-title">Maaveeran</h3>
+                <!-- <p class="screen-name">Screen : Silver</p> -->
+                <label>
+                    Screen : 
+                </label>
+                <select id="movie">
+                    <option value="10">Platinum</option>
+                    <option value="25">Gold</option>
+                    <option value="16">Silver</option>
+                </select>
+                <div class="booking">
+                    <h2 class="price">&#8377 350</h2>
+                    <a href="#" class="btn" onclick="myFunction()">Buy Tickets</a>
+                </div>
+            </div>
+
+
+            <div class="current-movie">
+                <div class="cm-img-box">
+                    <img src="pink.jpg" alt="">
+                </div>
+                <h3 class="movie-title">Pink</h3>
+                <!-- <p class="screen-name">Screen : Silver</p> -->
+                <label>
+                    Screen : 
+                </label>
+                <select id="movie">
+                    <option value="10">Platinum</option>
+                    <option value="25">Gold</option>
+                    <option value="16">Silver</option>
+                </select>
+                <div class="booking">
+                    <h2 class="price">&#8377 150</h2>
+                    <a href="#" class="btn" onclick="myFunction()">Buy Tickets</a>
+                </div>
+            </div>
+
+            <div class="current-movie">
+                <div class="cm-img-box">
+                    <img src="jawan.png" alt="">
+                </div>
+                <h3 class="movie-title">Jawan</h3>
+                <!-- <p class="screen-name">Screen : Silver</p> -->
+                <label>
+                    Screen : 
+                </label>
+                <select id="movie">
+                    <option value="10">Platinum</option>
+                    <option value="25">Gold</option>
+                    <option value="16">Silver</option>
+                </select>
+                <div class="booking">
+                    <h2 class="price">&#8377 150</h2>
+                    <a href="#" class="btn" onclick="myFunction()">Buy Tickets</a>
+                </div>
+            </div>
+
+            <div class="current-movie">
+                <div class="cm-img-box">
+                    <img src="unchatered.webp" alt="">
+                </div>
+                <h3 class="movie-title">Unchatered</h3>
+                <!-- <p class="screen-name">Screen : Silver</p> -->
+                <label>
+                    Screen : 
+                </label>
+                <select id="movie">
+                    <option value="10">Platinum</option>
+                    <option value="25">Gold</option>
+                    <option value="16">Silver</option>
+                </select>
+                <div class="booking">
+                    <h2 class="price">&#8377 150</h2>
+                    <a href="#" class="btn" onclick="myFunction()">Buy Tickets</a>
+                </div>
+            </div>
+
+            <div class="current-movie">
+                <div class="cm-img-box">
+                    <img src="brothers.png" alt="">
+                </div>
+                <h3 class="movie-title">Brothers</h3>
+                <!-- <p class="screen-name">Screen : Silver</p> -->
+                <label>
+                    Screen : 
+                </label>
+                <select id="movie">
+                    <option value="10">Platinum</option>
+                    <option value="25">Gold</option>
+                    <option value="16">Silver</option>
+                </select>
+                <div class="booking">
+                    <h2 class="price">&#8377 150</h2>
+                    <a href="#" class="btn" onclick="myFunction()">Buy Tickets</a>
+                </div>
+            </div>
+
+            <div class="current-movie">
+                <div class="cm-img-box">
+                    <img src="Beast.png" alt="">
+                </div>
+                <h3 class="movie-title">Beast</h3>
+                <!-- <p class="screen-name">Screen : Silver</p> -->
+                <label>
+                    Screen : 
+                </label>
+                <select id="movie">
+                    <option value="10">Platinum</option>
+                    <option value="25">Gold</option>
+                    <option value="16">Silver</option>
+                </select>
+                <div class="booking">
+                    <h2 class="price">&#8377 150</h2>
+                    <a href="#" class="btn" onclick="myFunction()">Buy Tickets</a>
+                </div>
+            </div>
+
+            <div class="current-movie">
+                <div class="cm-img-box">
+                    <img src="Vikram.png" alt="">
+                </div>
+                <h3 class="movie-title">Vikram Vedha</h3>
+                <!-- <p class="screen-name">Screen : Silver</p> -->
+                <label>
+                    Screen : 
+                </label>
+                <select id="movie">
+                    <option value="10">Platinum</option>
+                    <option value="25">Gold</option>
+                    <option value="16">Silver</option>
+                </select>
+                <div class="booking">
+                    <h2 class="price">&#8377 150</h2>
+                    <a href="#" class="btn" onclick="myFunction()">Buy Tickets</a>
+                </div>
+            </div>
+
+            <div class="current-movie">
+                <div class="cm-img-box">
+                    <img src="shyam.png" alt="">
+                </div>
+                <h3 class="movie-title">Radhey Shyam</h3>
+                <!-- <p class="screen-name">Screen : Silver</p> -->
+                <label>
+                    Screen : 
+                </label>
+                <select id="movie">
+                    <option value="10">Platinum</option>
+                    <option value="25">Gold</option>
+                    <option value="16">Silver</option>
+                </select>
+                <div class="booking">
+                    <h2 class="price">&#8377 150</h2>
+                    <a href="#" class="btn" onclick="myFunction()">Buy Tickets</a>
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</section>   
+</body>
+</html>
